@@ -1,0 +1,10 @@
+{
+  "description": "Explore a polished, interactive prototype that demonstrates a web app’s layout, features, and user experience before development.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
