@@ -1,0 +1,43 @@
+/*
+ * Design tokens taken from the Figma export (design/figma-prototype/src/index.css).
+ * Additions marked "a11y" fix measured contrast failures (DECISIONS D-018).
+ */
+:root {
+  /* Core palette from the export */
+  --ink: #18382e;
+  --paper: #f7f3e8;
+  --lime: #f2c84b; /* accent yellow, named --lime in the export */
+  --orange: #e8633a;
+  --muted: #66716b; /* 4.58:1 on paper */
+  --line: #d6d4c9;
+
+  /* Supporting colours used by the export */
+  --white: #ffffff;
+  --sand: #ebe8de; /* filter drawer */
+  --mint: #b9d7c7; /* "Coming on your own?" banner */
+  --map-bg: #dedfd7;
+  --shadow-grey: #c8c5ba;
+
+  /* a11y additions */
+  --muted-strong: #59645e; /* 5.56:1 on paper, 4.9:1 on sand */
+  --orange-text: #b8401f; /* 5.00:1 on paper; replaces #e24e34 / #d84f2f for text */
+  --map-label: #5d6158; /* 4.72:1 on the map background */
+  --focus: var(--ink);
+  --focus-on-dark: var(--lime);
+
+  /* Status pills (text is always ink or white; colour is never the only cue) */
+  --status-pending: #f2c84b;
+  --status-approved: #b9d7c7;
+  --status-confirmed: #18382e;
+  --status-negative: #f1d6cc;
+  --status-neutral: #e4e2d8;
+
+  /* Type */
+  --font-ui: "DM Sans", system-ui, sans-serif;
+  --font-display: "Instrument Serif", Georgia, serif;
+  --text-xs: 11px; /* minimum text size (D-019) */
+
+  /* Layout */
+  --page-width: min(1410px, 91vw);
+  --radius-pill: 30px;
+}
